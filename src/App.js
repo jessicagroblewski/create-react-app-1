@@ -1,29 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-
 <>
-    <div class="outline">
-      <div class="lecard">
-        <h2>Some Nerd</h2>
-        <img src="https://i.kym-cdn.com/news_feeds/icons/mobile/000/037/359/05b.jpg" alt="Obi-Wan headshot" />
-        <p class="details">Hello there <br></br> Lightsaber go <i>brrrr</i></p>
-      </div>
-    </div>
-  <div class="buttons">
+<div class="blocks">
+  <button id="topbutton" class="button">add new</button>
+  <button id="title" class="button">change new title</button>
+  <button id="bg" class="button">change bg color</button>
+  <button id="delete" class="button">delete last</button>
   
-  <button class="copyCat">Copy</button>
-  <button id="del">Delete</button>
-  <button class="btnDet">Toggle Details</button> 
-  <button class="btnCT">Change Title</button>
-  <button  class="btnBG">Change Background Color</button>
-  
-  </div>
-  
+</div>
+<div id="card" class="card">
+  <h3 id="heading" class="heading">Landscaping Buisness!</h3>
+  <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg"/>
+  <p>This is a green tree! We love trees and want to cut them for you </p>
+  <button id="details" class="buttons">details</button>
+</div>
 </>
-  );
-}
-
-export default App;

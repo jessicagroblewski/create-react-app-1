@@ -1,52 +1,61 @@
-button {
-  cursor:pointer;
-  background-color:#4681f4;
-  color:white;
-  border-radius:10px;
-  padding:6px;
-  font-size:25px;
-  font-weight:bold;
+.card {
+  background-color: #91EBA9;
+  border: 5px outset #217C07;
+  width: 400px;
+  height: 500px;
   text-align:center;
-  width:14%;
-  
+}
+.heading{
+  color: white;
+  -webkit-text-stroke: 1px #1D6508;
+  font-size: 26px;
+}
+button {
+  text-transform: uppercase;
+  color: blue;
+  padding: 16px 16px;
+  background-color: pink;
+  padding: 15px 15px 15px 15px; 
+  }
+
+img {
+  width: 200px;
+}
+.ptag {
+  font-size: 20px;
+}
+.btn {
+  visibility: hidden;
+  border: 8px dashed blue;
+  margin: 12px 12px;
+}
+button:hover {
+  text-transform: uppercase;
+  color: black;
+  padding: 16px 16px;
+  background-color: white;
 }
 
-.outline {
- justify-content:center;
- display:flex;
-
+button:focus {
+  outline: 4px dashed darkorange;
 }
 
-.lecard{
- text-align: center;
- border: solid grey 6px;
- max-width:400px;
- border-radius: 20px;
- margin-bottom: 10px;
- font-size:20px;
- background-color:white;
-}
-img{
-  width: 350px;
-}
-
-@media screen and (min-width:501px) and (max-width:800px) {
-
-}
-@media screen and (max-width:500px) {
-  .lecard{
-    font-size: 5vw
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .btn {
+    visibility: visible;
+    border: 8px dashed blue;
+    margin: 12px 12px;
   }
 }
-.buttons {
-  margin: 16px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; 
+@media screen and (max-device-width: 500px) {
+  body {
+    transform: scale(500px);
+  }
 }
-button:hover{
-  background-color:red;
+.card p{
+  margin: 10px;
 }
-button:focus{
- background-color:red;
-}
+
+.buttons{
+  display: block;
+ }
